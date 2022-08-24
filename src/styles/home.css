@@ -1,0 +1,38 @@
+.table-container{
+    position: relative;
+
+}
+table{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,80%);
+}
+/* .table-header{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+} */
+table {
+    border: 3px solid white;
+    background-color: rgb(187, 161, 17);
+    padding: 1rem;
+    width: 50%;
+}
+/* tr:nth-child(odd){
+    background-color: lightblue;
+} */
+td{
+    text-align: center;
+    border-bottom: 1px solid lightslategray;
+
+}
+tr{
+    padding: 1rem;
+}
+tr:hover{
+    background-color: rgb(167, 151, 10);
+}
+.td-settings{
+    margin:10px;
+}

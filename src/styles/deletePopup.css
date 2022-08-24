@@ -1,0 +1,46 @@
+.delete-container{
+   position: relative;
+}
+.delete-popup{
+    background-color: rgba(187, 161, 17,0.7);
+    width: 25%;
+    height: 180px;
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,120%);
+    z-index: 1;
+}
+.delete-par{
+    color: white;
+    font-size: 1.2rem;
+}
+.btn{
+    border: none;
+    padding: 1rem 2rem;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 150px;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+.btn-delete{
+    background-color: tomato;
+}
+.btn-delete:hover{
+    background-color: rgb(206, 79, 57);
+}
+.btn-edite{
+    background-color: yellowgreen;
+}
+.btn-edite:hover{
+    background-color: rgb(124, 167, 39);
+}
