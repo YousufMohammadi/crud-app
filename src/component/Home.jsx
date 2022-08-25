@@ -6,10 +6,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 export function Home() {
     
+    
     useEffect(()=>{
 
     } ,[])
-    const users = useGlobal(state=>state.users)
+    const users = useGlobal((state)=> state.users)
     const hanadlSelectedRow = useGlobal(state=>state.hanadlSelectedRow) 
 
     const [showDelete ,setShowDelete] = useState(false)
@@ -29,10 +30,20 @@ export function Home() {
         hanadlSelectedRow(filteredRow[0])
 
         }
-    function handleEdit() {
+    function handleEdit(e) {
         console.log(showEdit);
         
+
         setShowEdit(true)
+
+        // console.log("this is username " , e.target.id);
+        // console.log("this sis paswesd" ,e.target.name);
+
+        const clickedRow = {
+            userName: e.target.id,
+            pass: e.target.name
+        }
+        hanadlSelectedRow(clickedRow)
     }
 
     return(<>
@@ -62,7 +73,7 @@ export function Home() {
                     <td id={user.userName}>{user.userName}</td>
                     <td id={user.pass}>{user.pass}</td>
                     <td >
-                        <img src="edit.svg" alt="edit"  className="td-settings" onClick={handleEdit}/>
+                        <img src="edit.svg" alt="edit" name={user.pass} id={user.userName} className="td-settings" onClick={handleEdit}/>
                         <img src="delete.svg" name={user.userName} id={user.userName} alt="delete" className="td-settings"  onClick={handleDelete} />
                     </td>
                 </tr>                        

@@ -57,3 +57,9 @@ body{
     color: white;
     margin-top: 0.5rem;
 }
+.register{
+    text-decoration: none;
+    color: gray;
+    margin-top: 0.5rem;
+    text-align: center;
+}
